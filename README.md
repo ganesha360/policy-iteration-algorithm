@@ -62,6 +62,8 @@ The policy iteration algorithm is guaranteed to converge to the optimal policy i
 
 ## POLICY IMPROVEMENT FUNCTION
 ~~~python
+## Developed by : Ganesh R
+## Reg No : 212222240029
 def policy_improvement(V, P, gamma=0.9):
     # Initialize a matrix to store action values for each state-action pair
     Q = np.zeros((len(P), len(P[0])), dtype=np.float64)
@@ -80,6 +82,8 @@ def policy_improvement(V, P, gamma=0.9):
 ~~~
 ## POLICY ITERATION FUNCTION
 ~~~python
+## Developed by : Ganesh R
+## Reg No : 212222240029
 def policy_iteration(P, gamma=0.9, theta=1e-10):
     # Initialize a random policy by selecting random actions for each state
     random_actions = np.random.choice(tuple(P[0].keys()), len(P))
